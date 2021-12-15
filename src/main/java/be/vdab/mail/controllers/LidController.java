@@ -41,7 +41,7 @@ class LidController {
     }
 
     @PostMapping
-    public String regstreer(@Valid Lid lid, Errors errors, RedirectAttributes redirect, HttpServletRequest request) {
+    public String registreer(@Valid Lid lid, Errors errors, RedirectAttributes redirect, HttpServletRequest request) {
         if (errors.hasErrors()) {
             return "registratieform";
         }
